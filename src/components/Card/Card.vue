@@ -51,6 +51,7 @@
       position: absolute;
       width: auto;
       height: 90%;
+      cursor: pointer;
     }
   }
 </style>

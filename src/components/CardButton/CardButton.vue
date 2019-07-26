@@ -32,6 +32,12 @@
       color: #CBCBCB;
       font-size: 11px;
       text-transform: capitalize;
+      cursor: pointer;
+
+      &:hover {
+        border: 1px solid #CBCBCB;
+        color: #a7a7a7;
+      }
     }
   }
 </style>
