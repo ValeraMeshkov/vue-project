@@ -2,10 +2,9 @@
   <div>
 
     <div v-if="!showInfo"
-         @click="showInfo = !showInfo"
          class="image"
          :style="{ backgroundImage: `url(${base64}${card.image})`}">
-      <img :src="imgSrc" class="image__gift"/>
+      <img :src="imgSrc" @click="showInfo = !showInfo" class="image__gift"/>
     </div>
     <CardData v-else :items="card.items"/>
 
