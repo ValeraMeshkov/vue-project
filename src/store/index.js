@@ -19,6 +19,7 @@ export default new Vuex.Store({
       http.get(config.itemsUrl)
         .then(response => response.json())
         .then(cards => commit('setCards', cards))
+        .catch(err => console.log(err));
     }
   }
 });
